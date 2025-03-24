@@ -23,6 +23,7 @@ import (
 	"github.com/sudorandom/fauxrpc/private/stubs"
 	stubsv1 "github.com/sudorandom/fauxrpc/proto/gen/stubs/v1"
 	"google.golang.org/protobuf/proto"
+	"google.golang.org/protobuf/types/known/anypb"
 )
 
 type RunCmd struct {
@@ -139,12 +140,22 @@ func (f StubFile) ToRequest() (*stubsv1.AddStubsRequest, error) {
 			return nil, fmt.Errorf(`"target" is required for each stub; missing for stub %d`, i)
 		}
 		var contentsJSON string
+		var stubError *stubsv1.Error
 		if stub.Content != nil {
 			b, err := json.Marshal(stub.Content)
 			if err != nil {
 				return nil, err
 			}
 			contentsJSON = string(b)
+		} else if stub.ErrorCode != 0 {
+			code := stubsv1.ErrorCode(stub.ErrorCode)
+			stubError = stubsv1.Error_builder{
+				Code:    &code,
+				Message: proto.String(stub.ErrorMessage),
+				Details: []*anypb.Any{},
+			}.Build()
+		} else {
+			return nil, fmt.Errorf(`"content" or "error_code" is required for each stub; missing for stub %d`, i)
 		}
 		stubs[i] = stubsv1.Stub_builder{
 			Ref:        stubsv1.StubRef_builder{Id: proto.String(stub.ID), Target: proto.String(stub.Target)}.Build(),
@@ -152,6 +163,7 @@ func (f StubFile) ToRequest() (*stubsv1.AddStubsRequest, error) {
 			CelContent: proto.String(stub.CelContent),
 			ActiveIf:   proto.String(stub.ActiveIf),
 			Priority:   proto.Int32(stub.Priority),
+			Error:      stubError,
 		}.Build()
 	}
 
