@@ -8,9 +8,9 @@ import (
 	"strings"
 
 	"connectrpc.com/connect"
-	"github.com/sudorandom/fauxrpc/private/registry"
-	registryv1 "github.com/sudorandom/fauxrpc/proto/gen/registry/v1"
-	"github.com/sudorandom/fauxrpc/proto/gen/registry/v1/registryv1connect"
+	"github.com/rorueda/fauxrpc/private/registry"
+	registryv1 "github.com/rorueda/fauxrpc/proto/gen/registry/v1"
+	"github.com/rorueda/fauxrpc/proto/gen/registry/v1/registryv1connect"
 	"golang.org/x/net/http2"
 	"google.golang.org/protobuf/reflect/protodesc"
 	"google.golang.org/protobuf/reflect/protoreflect"

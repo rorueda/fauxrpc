@@ -1,7 +1,7 @@
 package fauxrpc
 
 import (
-	"github.com/sudorandom/fauxrpc/private/registry"
+	"github.com/rorueda/fauxrpc/private/registry"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )
 

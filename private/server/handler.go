@@ -12,11 +12,11 @@ import (
 
 	"github.com/brianvoe/gofakeit/v7"
 	"github.com/bufbuild/protovalidate-go"
-	"github.com/sudorandom/fauxrpc"
-	"github.com/sudorandom/fauxrpc/private/grpc"
-	"github.com/sudorandom/fauxrpc/private/registry"
-	"github.com/sudorandom/fauxrpc/private/stubs"
-	"github.com/sudorandom/fauxrpc/protocel"
+	"github.com/rorueda/fauxrpc"
+	"github.com/rorueda/fauxrpc/private/grpc"
+	"github.com/rorueda/fauxrpc/private/registry"
+	"github.com/rorueda/fauxrpc/private/stubs"
+	"github.com/rorueda/fauxrpc/protocel"
 	"golang.org/x/sync/errgroup"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
@@ -24,7 +24,7 @@ import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/runtime/protoiface"
 
-	stubsv1 "github.com/sudorandom/fauxrpc/proto/gen/stubs/v1"
+	stubsv1 "github.com/rorueda/fauxrpc/proto/gen/stubs/v1"
 )
 
 const maxMessageSize = 4 * 1024 * 1024

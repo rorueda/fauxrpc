@@ -8,9 +8,9 @@ import (
 
 	"github.com/brianvoe/gofakeit/v7"
 	"github.com/brianvoe/gofakeit/v7/source"
-	"github.com/sudorandom/fauxrpc"
-	"github.com/sudorandom/fauxrpc/private/grpc"
-	"github.com/sudorandom/fauxrpc/private/registry"
+	"github.com/rorueda/fauxrpc"
+	"github.com/rorueda/fauxrpc/private/grpc"
+	"github.com/rorueda/fauxrpc/private/registry"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"

@@ -1,15 +1,15 @@
-module github.com/sudorandom/fauxrpc/testcontainers
+module github.com/rorueda/fauxrpc/testcontainers
 
 go 1.23.2
 
-replace github.com/sudorandom/fauxrpc => ../
+replace github.com/rorueda/fauxrpc => ../
 
 require (
 	buf.build/gen/go/connectrpc/eliza/connectrpc/go v1.17.0-20230913231627-233fca715f49.1
 	buf.build/gen/go/connectrpc/eliza/protocolbuffers/go v1.35.2-20230913231627-233fca715f49.1
 	connectrpc.com/connect v1.17.0
 	github.com/google/uuid v1.6.0
-	github.com/sudorandom/fauxrpc v0.0.0-00010101000000-000000000000
+	github.com/rorueda/fauxrpc v0.0.0-00010101000000-000000000000
 	github.com/testcontainers/testcontainers-go v0.33.0
 	google.golang.org/protobuf v1.35.2
 )

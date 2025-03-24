@@ -6,14 +6,14 @@ import (
 	"testing"
 
 	elizav1 "buf.build/gen/go/connectrpc/eliza/protocolbuffers/go/connectrpc/eliza/v1"
+	"github.com/rorueda/fauxrpc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/sudorandom/fauxrpc"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/types/dynamicpb"
 
-	testv1 "github.com/sudorandom/fauxrpc/proto/gen/test/v1"
+	testv1 "github.com/rorueda/fauxrpc/proto/gen/test/v1"
 )
 
 var AllTypes = testv1.File_test_v1_test_proto.Messages().ByName("AllTypes")

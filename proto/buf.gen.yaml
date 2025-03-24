@@ -3,7 +3,7 @@ managed:
   enabled: true
   override:
     - file_option: go_package_prefix
-      value: github.com/sudorandom/fauxrpc/proto/gen
+      value: github.com/rorueda/fauxrpc/proto/gen
   disable:
     - module: buf.build/bufbuild/protovalidate
     - module: buf.build/protocolbuffers/wellknowntypes

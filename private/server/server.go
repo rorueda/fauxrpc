@@ -15,12 +15,12 @@ import (
 	"github.com/bufbuild/protovalidate-go"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
+	"github.com/rorueda/fauxrpc"
+	"github.com/rorueda/fauxrpc/private/registry"
+	"github.com/rorueda/fauxrpc/private/stubs"
+	"github.com/rorueda/fauxrpc/proto/gen/registry/v1/registryv1connect"
+	"github.com/rorueda/fauxrpc/proto/gen/stubs/v1/stubsv1connect"
 	"github.com/rs/cors"
-	"github.com/sudorandom/fauxrpc"
-	"github.com/sudorandom/fauxrpc/private/registry"
-	"github.com/sudorandom/fauxrpc/private/stubs"
-	"github.com/sudorandom/fauxrpc/proto/gen/registry/v1/registryv1connect"
-	"github.com/sudorandom/fauxrpc/proto/gen/stubs/v1/stubsv1connect"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )
 

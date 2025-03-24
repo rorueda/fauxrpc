@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"connectrpc.com/connect"
-	stubsv1 "github.com/sudorandom/fauxrpc/proto/gen/stubs/v1"
-	fauxrpctestcontainers "github.com/sudorandom/fauxrpc/testcontainers"
+	stubsv1 "github.com/rorueda/fauxrpc/proto/gen/stubs/v1"
+	fauxrpctestcontainers "github.com/rorueda/fauxrpc/testcontainers"
 	"google.golang.org/protobuf/reflect/protoregistry"
 
 	"buf.build/gen/go/connectrpc/eliza/connectrpc/go/connectrpc/eliza/v1/elizav1connect"

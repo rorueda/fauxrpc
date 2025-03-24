@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"github.com/google/cel-go/cel"
-	"github.com/sudorandom/fauxrpc/celfakeit"
+	"github.com/rorueda/fauxrpc/celfakeit"
 )
 
 ...

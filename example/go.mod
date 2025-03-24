@@ -1,4 +1,4 @@
-module github.com/sudorandom/fauxrpc/examples
+module github.com/rorueda/fauxrpc/examples
 
 go 1.23.2
 
@@ -8,7 +8,7 @@ require (
 	buf.build/gen/go/connectrpc/eliza/protocolbuffers/go v1.34.2-20230913231627-233fca715f49.2
 	buf.build/gen/go/kubernetes/cri-api/protocolbuffers/go v1.34.2-20231226185118-eb1c8c6aca91.2
 	connectrpc.com/connect v1.17.0
-	github.com/sudorandom/fauxrpc v0.0.10
+	github.com/rorueda/fauxrpc v0.0.10
 	github.com/testcontainers/testcontainers-go v0.33.0
 	google.golang.org/protobuf v1.35.1
 )
@@ -76,4 +76,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/sudorandom/fauxrpc => ../
+replace github.com/rorueda/fauxrpc => ../

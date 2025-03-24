@@ -7,7 +7,7 @@ import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"gopkg.in/yaml.v3"
 
-	"github.com/sudorandom/fauxrpc/private/registry"
+	"github.com/rorueda/fauxrpc/private/registry"
 )
 
 const openapiHTML = `

@@ -1,7 +1,7 @@
 ![](<assets/logo-wide.jpg>)
 
 # FauxRPC
-[![Go](https://github.com/sudorandom/fauxrpc/actions/workflows/go.yml/badge.svg)](https://github.com/sudorandom/fauxrpc/actions/workflows/go.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/sudorandom/fauxrpc)](https://goreportcard.com/report/github.com/sudorandom/fauxrpc) [![Go Reference](https://pkg.go.dev/badge/github.com/sudorandom/fauxrpc.svg)](https://pkg.go.dev/github.com/sudorandom/fauxrpc)
+[![Go](https://github.com/rorueda/fauxrpc/actions/workflows/go.yml/badge.svg)](https://github.com/rorueda/fauxrpc/actions/workflows/go.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/rorueda/fauxrpc)](https://goreportcard.com/report/github.com/rorueda/fauxrpc) [![Go Reference](https://pkg.go.dev/badge/github.com/rorueda/fauxrpc.svg)](https://pkg.go.dev/github.com/rorueda/fauxrpc)
 
 [FauxRPC](https://fauxrpc.com) is a powerful tool that empowers you to accelerate development and testing by effortlessly generating fake implementations of gRPC, gRPC-Web, Connect, and REST services. If you have a protobuf-based workflow, this tool could help.
 
@@ -21,11 +21,11 @@ See the [the documentation website](https://fauxrpc.com) for more!
 
 ### Install via source
 ```
-go install github.com/sudorandom/fauxrpc/cmd/fauxrpc@latest
+go install github.com/rorueda/fauxrpc/cmd/fauxrpc@latest
 ```
 
 ### Pre-built binaries
-Binaries are built for several platforms for each release. See the latest ones on [the releases page](https://github.com/sudorandom/fauxrpc/releases/latest).
+Binaries are built for several platforms for each release. See the latest ones on [the releases page](https://github.com/rorueda/fauxrpc/releases/latest).
 
 ## Quick Start
 

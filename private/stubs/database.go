@@ -4,7 +4,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/sudorandom/fauxrpc/protocel"
+	"github.com/rorueda/fauxrpc/protocel"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )
 

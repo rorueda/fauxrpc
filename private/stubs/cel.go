@@ -5,9 +5,9 @@ import (
 	"fmt"
 
 	"github.com/google/cel-go/cel"
-	"github.com/sudorandom/fauxrpc/celfakeit"
-	"github.com/sudorandom/fauxrpc/private/registry"
-	"github.com/sudorandom/fauxrpc/protocel"
+	"github.com/rorueda/fauxrpc/celfakeit"
+	"github.com/rorueda/fauxrpc/private/registry"
+	"github.com/rorueda/fauxrpc/protocel"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )
 

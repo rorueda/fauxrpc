@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	"github.com/sudorandom/fauxrpc"
+	"github.com/rorueda/fauxrpc"
 )
 
 func TestBool(t *testing.T) {

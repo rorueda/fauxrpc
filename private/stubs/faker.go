@@ -4,8 +4,8 @@ import (
 	"context"
 	"math/rand/v2"
 
-	"github.com/sudorandom/fauxrpc"
-	"github.com/sudorandom/fauxrpc/protocel"
+	"github.com/rorueda/fauxrpc"
+	"github.com/rorueda/fauxrpc/protocel"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )
 

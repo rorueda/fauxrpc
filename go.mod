@@ -1,4 +1,4 @@
-module github.com/sudorandom/fauxrpc
+module github.com/rorueda/fauxrpc
 
 go 1.23.2
 

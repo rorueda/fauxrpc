@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"github.com/google/cel-go/cel"
+	"github.com/rorueda/fauxrpc/celfakeit"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/sudorandom/fauxrpc/celfakeit"
 )
 
 func TestFakeit(t *testing.T) {

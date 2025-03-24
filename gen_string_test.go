@@ -5,8 +5,8 @@ import (
 
 	"google.golang.org/protobuf/reflect/protoreflect"
 
+	"github.com/rorueda/fauxrpc"
 	"github.com/stretchr/testify/assert"
-	"github.com/sudorandom/fauxrpc"
 )
 
 func TestGenerateString(t *testing.T) {
