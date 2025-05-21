@@ -66,15 +66,17 @@ func NewHandler(service protoreflect.ServiceDescriptor, faker fauxrpc.ProtoFaker
 			if err := proto.Unmarshal(body[:size], msg); err != nil {
 				return nil, status.New(codes.NotFound, err.Error())
 			}
-			if err := validate.Validate(msg); err != nil {
-				grpcErr := status.New(codes.InvalidArgument, err.Error())
-				if validationErr := new(protovalidate.ValidationError); errors.As(err, &validationErr) {
-					grpcErr, err = grpcErr.WithDetails(validationErr.ToProto())
-					if err != nil {
-						slog.Error("error serializing validation details", "error", err)
+			if validate != nil {
+				if err := validate.Validate(msg); err != nil {
+					grpcErr := status.New(codes.InvalidArgument, err.Error())
+					if validationErr := new(protovalidate.ValidationError); errors.As(err, &validationErr) {
+						grpcErr, err = grpcErr.WithDetails(validationErr.ToProto())
+						if err != nil {
+							slog.Error("error serializing validation details", "error", err)
+						}
 					}
+					return nil, grpcErr
 				}
-				return nil, grpcErr
 			}
 			return msg, nil
 		}
