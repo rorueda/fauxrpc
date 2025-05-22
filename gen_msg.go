@@ -5,7 +5,7 @@ import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 )
 
-const defaultMaxDepth = 5
+const defaultMaxDepth = 20
 
 // NewMessage creates a new message populated with fake data given a protoreflect.MessageDescriptor
 func NewMessage(md protoreflect.MessageDescriptor, opts GenOptions) (protoreflect.ProtoMessage, error) {
