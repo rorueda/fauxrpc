@@ -47,11 +47,7 @@ func String(fd protoreflect.FieldDescriptor, opts GenOptions) string {
 	if constraints == nil {
 		return stringSimple(fd, opts)
 	}
-	rules := constraints.GetString_()
-	if rules == nil {
-		return stringSimple(fd, opts)
-	}
-
+	rules := constraints.GetString()
 	if rules == nil {
 		return stringSimple(fd, opts)
 	}
